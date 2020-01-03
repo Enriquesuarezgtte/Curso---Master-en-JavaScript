@@ -1,0 +1,21 @@
+{
+  "name": "cursojavascript",
+  "version": "1.0.0",
+  "description": "Master en JavaScript-Udemy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "tslint --project js/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Enriquesuarezgtte/Curso---Master-en-JavaScript.git"
+  },
+  "author": "Enrique Suarez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Enriquesuarezgtte/Curso---Master-en-JavaScript/issues"
+  },
+  "homepage": "https://github.com/Enriquesuarezgtte/Curso---Master-en-JavaScript#readme",
+  "devDependencies": {}
+}

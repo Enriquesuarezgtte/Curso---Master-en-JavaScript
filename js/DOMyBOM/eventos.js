@@ -1,46 +1,50 @@
 'use strict'
 
 ///Eventos del mouse
-var boton = document.querySelector("#boton");
-var input = document.querySelector('#campo_nombre');
+window.addEventListener('load', () => {
 
-function cambiarColorBoton() {
+  var boton = document.querySelector("#boton");
+  var input = document.querySelector('#campo_nombre');
+
+  function cambiarColorBoton() {
     boton.style.background = "red";
-}
-function cambiarAOtroColor() {
+  }
+  function cambiarAOtroColor() {
     boton.style.background = "green";
-}
-//click
-boton.addEventListener('click', () => cambiarColorBoton());
+  }
+  //click
+  boton.addEventListener('click', () => cambiarColorBoton());
 
-//mouse over
-boton.addEventListener('mouseover', () => cambiarColorBoton());
+  //mouse over
+  boton.addEventListener('mouseover', () => cambiarColorBoton());
 
-//mouse out
-boton.addEventListener('mouseout', () => cambiarAOtroColor());
+  //mouse out
+  boton.addEventListener('mouseout', () => cambiarAOtroColor());
 
-//focus
-input.addEventListener('focus',()=>{
-    console.log('focus');    
-});
+  //focus
+  input.addEventListener('focus', () => {
+    console.log('focus');
+  });
 
-//blur
-input.addEventListener('blur',()=>{
-    console.log('blur');    
-});
+  //blur
+  input.addEventListener('blur', () => {
+    console.log('blur');
+  });
 
-//keydown
-input.addEventListener('keydown',(event)=>{
-    console.log('keydown', String.fromCharCode(event.keyCode));    
-});
+  //keydown
+  input.addEventListener('keydown', (event) => {
+    console.log('keydown', String.fromCharCode(event.keyCode));
+  });
 
-//keypress
-input.addEventListener('keypress',()=>{
-    console.log('keypress');    
-});
+  //keypress
+  input.addEventListener('keypress', () => {
+    console.log('keypress');
+  });
 
-//keyup
-input.addEventListener('keyup',()=>{
-    console.log('keyup');    
-});
+  //keyup
+  input.addEventListener('keyup', () => {
+    console.log('keyup');
+  });
 
+
+}); // end load 
